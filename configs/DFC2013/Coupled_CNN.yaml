@@ -1,0 +1,57 @@
+data:
+    train:
+        r: 5
+        csv_dir: 'DFC2013_csv/train_all.csv'
+        hsi_dir: '/data2/huyuxuan/DFC2013/2013_IEEE_GRSS_DF_Contest_CASI.tif'
+        lidar_dir: '/data2/huyuxuan/DFC2013/2013_IEEE_GRSS_DF_Contest_LiDAR.tif'
+        batch_size: 64
+        total_iter: 4500
+        num_workers: 2
+        transforms:
+            - RandomNoise:
+                p: 0.5
+            - RandomHorizontalFlip:
+                p: 0.5
+            - RandomVerticalFlip:
+                p: 0.5
+            - RandomRotate: 
+                p: 1.0
+            - ToTensor: []
+
+    valid:
+        r: 5
+        csv_dir :  'DFC2013_csv/test.csv'
+        hsi_dir: '/data2/huyuxuan/DFC2013/2013_IEEE_GRSS_DF_Contest_CASI.tif'
+        lidar_dir: '/data2/huyuxuan/DFC2013/2013_IEEE_GRSS_DF_Contest_LiDAR.tif'
+        batch_size: 128
+        num_workers: 2
+        transforms:
+            - ToTensor: []
+
+    test:
+        r: 5
+        csv_dir :  'DFC2013_csv/test.csv'
+        hsi_dir: '/data2/huyuxuan/DFC2013/2013_IEEE_GRSS_DF_Contest_CASI.tif'
+        lidar_dir: '/data2/huyuxuan/DFC2013/2013_IEEE_GRSS_DF_Contest_LiDAR.tif'
+        batch_size: 128
+        num_workers: 2
+        transforms:
+            - ToTensor: []
+
+optimizer:
+    type: Adam
+    kwargs:
+        lr: 1.0e-3
+        weight_decay: 1.0e-5
+
+valid_iter: 100
+save_iter: 500
+log_iter: 100
+
+
+model:
+    type: CoupledCNN
+    kwargs:
+        hsi_channel: 144
+        lidar_channel: 1
+        num_classes: 15
