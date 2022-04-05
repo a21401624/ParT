@@ -1,3 +1,5 @@
 ## HYPERSPECTRAL AND LIDAR DATA LAND-USE CLASSIFICATION USING PARALLEL TRANSFORMERS
 
-Detailed information revealed if accepted.
+This paper has been accepted by IGARSS2022.
+
+![ParT](ParT.png)
