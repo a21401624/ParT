@@ -10,7 +10,19 @@ It has been proved that the fusion of hyperspectral and Li-DAR data can effectiv
 
 ## About the Dataset
 
-If you are interested in reproducing my work, please email me to get the dataset files I use.
+I have uploaded the data files into my Google Drive. The links are as below:
+
+MUUFL Dataset:
+
+https://drive.google.com/file/d/1U9lSWNsUR1AoGLSPrhWGwLWlSHORN1hB/view?usp=share_link
+
+https://drive.google.com/file/d/1lF0HsFjYXz9vaqvXNmTU2QH1nbf-0Z-c/view?usp=share_link
+
+DFC2013 Dataset:
+
+https://drive.google.com/file/d/10wY14nysnn5mHfAs5SS-4SHT15Myj1I1/view?usp=sharing
+
+https://drive.google.com/file/d/1cOkjo8Bf0uN96PthbvQHgRBh36C3ZMcj/view?usp=sharing
 
 ## Citation
 
