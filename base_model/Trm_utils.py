@@ -1,5 +1,5 @@
 '''
-    本实现主要参考：https://zhuanlan.zhihu.com/p/347709112
+    本实现主要参考:https://zhuanlan.zhihu.com/p/347709112
 '''
 from torch import nn
 import torch
@@ -27,7 +27,7 @@ class PositionalEmbedding(nn.Module):
         
         # 可学习绝对位置编码
         elif poem_type=='learnable':
-            self.pe = nn.Parameter(torch.randn(1,max_seq_len, d_model))
+            self.pe = nn.Parameter(torch.randn(1, max_seq_len, d_model))
 
     def forward(self, x):
         # 让embeddings vector 相对大一些

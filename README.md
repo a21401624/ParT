@@ -8,6 +8,20 @@ It has been proved that the fusion of hyperspectral and Li-DAR data can effectiv
 
 ![ParT](ParT.png)
 
+## Environment
+
+This project don't require any special python packages and only need some basic packages for deep learning, such as:
+
+Pytorch (no restriction on version number)
+
+Numpy
+
+Sklearn
+
+Tifffile
+
+Pandas
+
 ## About the Dataset
 
 I have uploaded the data files into my Google Drive. The links are as below:
